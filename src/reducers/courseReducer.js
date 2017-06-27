@@ -1,9 +1,9 @@
-import * as actions from '../actions/actionTypes'
+import * as types from '../actions/actionTypes'
 
 export default function courseReduce(state = [], action) {
   switch (action.type) {
-    case actions.CREATE_COURSE:
-      return [...state, Object.assign({}, action.course)]
+    case types.LOAD_COURSES_SUCCESS:
+      return action.courses
     default:
       return state
   }
