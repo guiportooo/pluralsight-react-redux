@@ -7,11 +7,11 @@ export function loadCoursesSuccess(courses) {
 }
 
 export function createCourseSuccess(course) {
-  return { type: types.CREATE_AUTHOR_SUCCESS, course }
+  return { type: types.CREATE_COURSE_SUCCESS, course }
 }
 
 export function updateCourseSuccess(course) {
-  return { type: types.UPDATE_AUTHOR_SUCCESS, course }
+  return { type: types.UPDATE_COURSE_SUCCESS, course }
 }
 
 export function loadCourses() {
